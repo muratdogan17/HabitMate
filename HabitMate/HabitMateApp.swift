@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct HabitMateApp: App {
+    @StateObject private var viewModel = HabitMateViewModel()
+    
+    init() {
+        
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(viewModel)
         }
     }
 }

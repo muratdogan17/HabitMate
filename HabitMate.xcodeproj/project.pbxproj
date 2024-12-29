@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		EFB8C0E22D21F2960053CAC7 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = EFB8C0E12D21F2960053CAC7 /* GoogleMobileAds */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		EF7475662D1A0290002653EE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +33,22 @@
 		EF74756F2D1A0290002653EE /* HabitMateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HabitMateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		EFC901A82D21F80C0090CD44 /* Exceptions for "HabitMate" folder in "HabitMate" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = EF7475542D1A028E002653EE /* HabitMate */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		EF7475572D1A028E002653EE /* HabitMate */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				EFC901A82D21F80C0090CD44 /* Exceptions for "HabitMate" folder in "HabitMate" target */,
+			);
 			path = HabitMate;
 			sourceTree = "<group>";
 		};
@@ -52,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFB8C0E22D21F2960053CAC7 /* GoogleMobileAds in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +120,7 @@
 				EF7475512D1A028E002653EE /* Sources */,
 				EF7475522D1A028E002653EE /* Frameworks */,
 				EF7475532D1A028E002653EE /* Resources */,
+				EFB8C0E42D21F4C00053CAC7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -112,6 +131,7 @@
 			);
 			name = HabitMate;
 			packageProductDependencies = (
+				EFB8C0E12D21F2960053CAC7 /* GoogleMobileAds */,
 			);
 			productName = HabitMate;
 			productReference = EF7475552D1A028E002653EE /* HabitMate.app */;
@@ -195,6 +215,9 @@
 			);
 			mainGroup = EF74754C2D1A028E002653EE;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				EFB8C0E02D21F2960053CAC7 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EF7475562D1A028E002653EE /* Products */;
 			projectDirPath = "";
@@ -230,6 +253,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EFB8C0E42D21F4C00053CAC7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EF7475512D1A028E002653EE /* Sources */ = {
@@ -399,11 +443,16 @@
 				DEVELOPMENT_TEAM = 2V66GSWQQW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HabitMate/Info.plist;
+				"INFOPLIST_FILE[sdk=*]" = "";
+				INFOPLIST_KEY_CFBundleDisplayName = HabitMate;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -428,11 +477,15 @@
 				DEVELOPMENT_TEAM = 2V66GSWQQW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HabitMate/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HabitMate;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -558,6 +611,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EFB8C0E02D21F2960053CAC7 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.13.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EFB8C0E12D21F2960053CAC7 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EFB8C0E02D21F2960053CAC7 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EF74754D2D1A028E002653EE /* Project object */;
 }
